@@ -1,0 +1,123 @@
+/*mobile and tablet*/
+
+@media (max-width:1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .header {
+        height: 68px;
+        position: fixed;
+        z-index: 9;
+        top: 0;
+    }
+    .container {
+        margin-top: 80px;
+    }
+    .header-with-search {
+        height: 68px;
+    }
+    .header-cart-list {
+        position: fixed;
+        top: 68px;
+        width: 100%;
+        right: 0;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+    .header-cart-list ::before {
+        display: none;
+    }
+    .header-sort-list {
+        display: flex;
+    }
+    .header-cart {
+        width: unset;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .mobile-category {
+        display: block;
+    }
+}
+
+
+/*tablet*/
+
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .header-cart {
+        width: 80px;
+        text-align: right;
+    }
+}
+
+
+/*mobile*/
+
+@media (max-width:739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header-with-search {
+        justify-content: space-between;
+    }
+    .header-logo {
+        width: unset;
+    }
+    .header-search {
+        position: fixed;
+        top: 68px;
+        z-index: 1;
+        left: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        padding: 0 16px;
+        animation: mobilesearchsidein linear 0.3s;
+        display: none;
+    }
+    .header-mobile-search {
+        display: block;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .header-search-history {
+        position: fixed;
+        top: 110px;
+        width: 100%;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .pagination-item-link {
+        min-width: 30px;
+        height: 24px;
+        line-height: 22px;
+    }
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+    .content {
+        margin: 0 4px;
+    }
+    .footer {
+        padding: 0 16px;
+    }
+    .footer-heading {
+        text-align: center;
+    }
+    .footer-item-link {
+        display: flex;
+        justify-content: center;
+    }
+    .home-product-price {
+        margin-left: 4px;
+    }
+    @keyframes mobilesearchsidein {
+        from {
+            opacity: 0;
+            top: 34px;
+        }
+        to {
+            opacity: 1;
+            top: 68px;
+        }
+    }
+}
